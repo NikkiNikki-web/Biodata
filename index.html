@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Biodata</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      background: white;
+      margin: auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #007bff;
+      text-decoration: underline;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .show-more {
+      margin-top: 20px;
+    }
+
+    .show-more button {
+      background: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .show-more button:hover {
+      background: #218838;
+    }
+
+    .more-details {
+      display: none;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Personal Biodata</h1>
+
+    <p><strong>Name:</strong> Nikhila</p>
+    <p><strong>Age:</strong> 23</p>
+    <p><strong>Location:</strong> Hyderabad</p>
+
+    <h2>Education</h2>
+    <p>Bachelor of Computer Applications</p>
+
+    <h2>Courses</h2>
+    <ul>
+      <li>JavaScript</li>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React.js</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> nikhila123@gmail.com</p>
+    <p><strong>Phone:</strong> 1234567890</p>
+
+    <h2>Show More Details</h2>
+    <div class="show-more">
+      <button onclick="toggleDetails()">Click to Show</button>
+      <div class="more-details" id="moreDetails">
+        <p><strong>Hobbies:</strong> Listening music, Cooking</p>
+        <p><strong>Experience:</strong> Software Developer</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleDetails() {
+      const details = document.getElementById("moreDetails");
+      details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+  </script>
+
+</body>
+</html>
